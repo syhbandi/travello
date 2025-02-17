@@ -1,8 +1,13 @@
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="text-3xl text-red-600 font-[Poppins]">App</div>
-  )
-}
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
+};
 
-export default App
+export default App;
