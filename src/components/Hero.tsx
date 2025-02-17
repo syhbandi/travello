@@ -30,9 +30,9 @@ const Hero = () => {
               <button className="h-14 flex items-center justify-center bg-secondary text-white font-poppins rounded-xl px-8 hover:bg-secondary/90 shadow-2xl shadow-primary/50">
                 Find Out More
               </button>
-              <a href="" className="flex items-center gap-3">
+              <a href="" className="flex  items-center gap-3">
                 <button className="h-14 w-14 bg-primary rounded-full shadow-2xl shadow-primary/20"></button>
-                <span className="text-xl font-poppins font-medium text-gray-700">
+                <span className="text-xl font-poppins font-medium text-gray-700 hidden md:block">
                   Play Demo
                 </span>
               </a>
