@@ -10,29 +10,41 @@ const Hero = () => {
         width={500}
         className="absolute right-0 top-0 -z-1"
       />
-      <div className="-z-1 w-[300px] h-[300px] absolute bg-[#D5AEE4] blur-3xl -left-[30%] -top-[10%]"></div>
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 lg:pt-20">
+      <div className="hidden lg:block -z-1 w-[300px] h-[300px] absolute bg-[#D5AEE4] blur-3xl -left-[30%] -top-[10%]"></div>
+      <div className="container mx-auto px-6 max-w-7xl py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-5">
           <div className="space-y-5 flex flex-col justify-center">
-            <p className="font-bold uppercase font-poppins text-primary text-2xl">
+            <p className="font-bold uppercase font-poppins text-primary text-lg lg:text-2xl">
               Best Destinations around the world
             </p>
-            <h1 className="text-7xl font-bold text-gray-800 font-volkhov">
-              Travel, enjoy and live a new and full life
+            <h1 className="text-5xl lg:text-7xl font-bold text-indigo-950 font-volkhov">
+              Travel, <span className="relative">enjoy</span> and live a new and
+              full life
             </h1>
-            <p className="text-lg font-poppins font-medium text-gray-700">
+            <p className="text-base lg:text-lg font-poppins font-medium text-gray-700">
               Built Wicket longer admire do barton vanity itself do in it.
               Preferred to sportsmen it engrossed listening. Park gate sell they
               west hard for the.
             </p>
-            <div>
+            <div className="flex items-center gap-10">
               <button className="h-14 flex items-center justify-center bg-secondary text-white font-poppins rounded-xl px-8 hover:bg-secondary/90 shadow-2xl shadow-primary/50">
                 Find Out More
               </button>
+              <a href="" className="flex items-center gap-3">
+                <button className="h-14 w-14 bg-primary rounded-full shadow-2xl shadow-primary/20"></button>
+                <span className="text-xl font-poppins font-medium text-gray-700">
+                  Play Demo
+                </span>
+              </a>
             </div>
           </div>
-          <div>
-            <img src={heroImage} alt="traveller" height={700} />
+          <div className="hidden md:flex flex-col justify-center">
+            <img
+              src={heroImage}
+              alt="traveller"
+              height={500}
+              className="-z-1"
+            />
           </div>
         </div>
       </div>
