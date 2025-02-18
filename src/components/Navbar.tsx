@@ -6,7 +6,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("udah 50 nih");
       if (window.scrollY > 50) {
         navRef.current?.classList.add("bg-white", "shadow");
       } else {
