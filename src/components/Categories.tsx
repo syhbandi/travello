@@ -2,11 +2,12 @@ import satelliteDish from "../assets/images/satellite-dish.png";
 import plane from "../assets/images/plane.png";
 import localEvents from "../assets/images/local-events.png";
 import customization from "../assets/images/customization.png";
+import decore from "../assets/images/categories-decore.png";
 
 const Categories = () => {
   return (
     <section className="py-10">
-      <div className="container max-w-7xl mx-auto px-5">
+      <div className="container max-w-7xl mx-auto px-5 relative">
         <h2 className="text-center font-poppins text-lg font-semibold text-gray-600">
           CATEGORY
         </h2>
@@ -54,6 +55,10 @@ const Categories = () => {
             </p>
           </li>
         </ul>
+
+        <div className="absolute right-0 top-0 -z-1 hidden md:block">
+          <img src={decore} alt="categories decore" className="w-28" />
+        </div>
       </div>
     </section>
   );
