@@ -4,13 +4,12 @@ import textDecore from "../assets/images/text-decore.png";
 
 const Hero = () => {
   return (
-    <div className="py-20 relative">
+    <div className="py-20 relative overflow-hidden">
       <div className="hidden lg:block -z-1 w-[300px] h-[300px] absolute bg-[#D5AEE4] blur-3xl -left-[30%] -top-[10%]" />
       <img
         src={decore}
         alt="decore image"
-        width={500}
-        className="absolute right-0 top-0 -z-1"
+        className="absolute right-0 top-0 -z-10 w-[40%]"
       />
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-5">
@@ -22,7 +21,7 @@ const Hero = () => {
               Travel,{" "}
               <span className="relative">
                 enjoy{" "}
-                <div className="absolute bottom-3 -z-1 -left-7 w-96">
+                <div className="absolute bottom-3 -z-1 -left-7 w-96 hidden md:block">
                   <img src={textDecore} alt="text decore" className="" />
                 </div>
               </span>{" "}

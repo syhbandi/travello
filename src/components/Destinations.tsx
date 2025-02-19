@@ -4,7 +4,7 @@ import destinationDecore from "../assets/images/destinations-decore.png";
 
 const Destinations = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 overflow-hidden">
       <div className="container max-w-7xl mx-auto px-5">
         <h2 className="text-center font-poppins text-lg font-semibold text-gray-600">
           Top Selling
