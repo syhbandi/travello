@@ -48,7 +48,7 @@ const Destinations = () => {
             </div>
           ))}
 
-          <div className="absolute right-0 bottom-0 -z-10 -mr-14">
+          <div className="absolute right-0 bottom-0 -z-10 -mr-10">
             <img
               src={destinationDecore}
               alt="destinations decore"
