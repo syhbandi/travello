@@ -6,7 +6,7 @@ import decore from "../assets/images/categories-decore.png";
 
 const Categories = () => {
   return (
-    <section className="py-10">
+    <section className="py-20">
       <div className="container max-w-7xl mx-auto px-5 relative">
         <h2 className="text-center font-poppins text-lg font-semibold text-gray-600">
           CATEGORY
