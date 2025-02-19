@@ -4,14 +4,14 @@ import textDecore from "../assets/images/text-decore.png";
 
 const Hero = () => {
   return (
-    <div className="relative py-10 pt-28">
+    <div className="py-20 relative">
+      <div className="hidden lg:block -z-1 w-[300px] h-[300px] absolute bg-[#D5AEE4] blur-3xl -left-[30%] -top-[10%]" />
       <img
         src={decore}
         alt="decore image"
         width={500}
         className="absolute right-0 top-0 -z-1"
       />
-      <div className="hidden lg:block -z-1 w-[300px] h-[300px] absolute bg-[#D5AEE4] blur-3xl -left-[30%] -top-[10%]" />
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-5">
           <div className="space-y-5 flex flex-col justify-center">

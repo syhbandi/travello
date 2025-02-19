@@ -47,8 +47,13 @@ const Destinations = () => {
               </div>
             </div>
           ))}
-          <div className="absolute -right-14 -z-10 bottom-0">
-            <img src={destinationDecore} alt="destinations decore" />
+
+          <div className="absolute right-0 bottom-0 -z-10 -mr-14">
+            <img
+              src={destinationDecore}
+              alt="destinations decore"
+              className="w-full"
+            />
           </div>
         </div>
       </div>
