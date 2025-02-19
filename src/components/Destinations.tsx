@@ -1,5 +1,6 @@
 import destinationsData from "../data/destinations";
 import { formatCurrency } from "../utils";
+import destinationDecore from "../assets/images/destinations-decore.png";
 
 const Destinations = () => {
   return (
@@ -12,7 +13,7 @@ const Destinations = () => {
           Top Destinations
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 relative">
           {destinationsData.map((destination, index) => (
             <div
               key={`destination-${index}`}
@@ -24,11 +25,11 @@ const Destinations = () => {
                 className="w-full h-[400px] object-cover object-top"
               />
               <div className="bg-white py-10 px-5 space-y-3 font-poppins">
-                <div className="flex items-center justify-between font-semibold text-gray-500">
+                <div className="flex items-center justify-between font-semibold text-gray-800">
                   <p>{destination.location}</p>
                   <p>{formatCurrency(destination.price)}</p>
                 </div>
-                <p className="font-semibold text-gray-500 flex items-center gap-2">
+                <p className="font-medium text-gray-600 flex items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -46,6 +47,9 @@ const Destinations = () => {
               </div>
             </div>
           ))}
+          <div className="absolute -right-14 -z-10 bottom-0">
+            <img src={destinationDecore} alt="destinations decore" />
+          </div>
         </div>
       </div>
     </section>
