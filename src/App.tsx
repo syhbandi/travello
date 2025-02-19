@@ -1,3 +1,4 @@
+import Booking from "./components/Booking";
 import Categories from "./components/Categories";
 import Destinations from "./components/Destinations";
 import Hero from "./components/Hero";
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Categories />
       <Destinations />
+      <Booking />
     </>
   );
 };
