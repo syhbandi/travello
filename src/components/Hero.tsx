@@ -21,8 +21,8 @@ const Hero = () => {
               Travel,{" "}
               <span className="relative">
                 enjoy{" "}
-                <div className="absolute bottom-3 -z-1 -left-7 w-96 hidden md:block">
-                  <img src={textDecore} alt="text decore" className="" />
+                <div className="absolute bottom-0 left-0 -ml-6 -z-1 w-full mb-3 hidden lg:block lg:w-96">
+                  <img src={textDecore} alt="text decore" className="w-full" />
                 </div>
               </span>{" "}
               and live a new and full life
